@@ -1,0 +1,173 @@
+$fontcolor:#3E3E3E;
+$bordercolor:#707070;
+
+    @media screen and (max-width:992px) {
+        .h-text{
+            .h-h2{
+                font-size: 60px;
+            }
+            .h-p{
+                font-size: 30px;
+            }
+        }
+
+    }
+    @media screen and (max-width:768px) {
+        body{
+            &.open{
+                height: 100vh;
+                overflow-y: hidden;
+            }
+        }
+    
+    // ヘッダー
+        .header{
+            position: relative;
+            height: auto;
+            .h-sp{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 68px;
+                margin: 0 16px;
+                .h-drawer{
+                    width: 10%;  
+                    z-index: 10;            
+                    img{
+                        width: 35px;
+                        height: auto;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .h-drawer-close{
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 20%;
+                height: 100vh;
+                z-index: 1001;
+                cursor: pointer;
+                img{
+                    position: absolute;
+                    top: 3%;
+                    left: 46%;
+                    width: 30%;
+                    height: auto;                
+                }
+            }
+            .h-nav{
+                transform: translateX(100%);
+                transition:ease .5s;
+                z-index:1000;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                background-color: rgba($color: #3E3E3E, $alpha: .5);
+                position: relative;
+                top: -68px;
+                left: 0;
+                ul{
+                    display: flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    width: 80%;
+                    margin-left: auto;
+                    height: 100vh;
+                    overflow: hidden;
+                    background-color: #FFFFFF;
+                    z-index:1001;
+                    a{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: $fontcolor;
+                        margin: 0 0 20px;
+                        li{
+                            margin: 0;
+                            width: 100%;
+                            height: 22px; 
+                        }
+                    }
+                }
+                &.open{
+                    transform: translateX(0);
+                    height: 100vh;
+                }
+            }
+            .landing{
+                position: absolute;
+                top: 0;
+                left: 0;
+                .h-img-item{
+                    img{
+                        height: 100vh;
+                    }
+                }
+            }
+            .slick-arrow{
+                width: 30px;
+                height: 30px;
+                &::before{
+                    font-size: 30px;
+                    color: #3E3E3E;
+        
+                }
+            }
+        }
+        .port-padding{
+            .port-col{
+                margin-bottom: 20px;
+            }
+        }
+        .form-table th,
+        .form-table td {
+            display: block;
+            width: 100%;
+        }
+        .c-name{
+            width: 100%;
+        }
+        .c-se{
+            width: 40%;
+        }
+        .c-address{
+            width: 100%;
+        }
+        .c-detail{
+            width: 100%;
+            height: 10em!important;
+        }
+        .p-p,.s-p{
+            font-size: 50px;
+        }
+        .p-ul{
+            font-size: 15px;
+        }
+    }
+
+    
+    
+    
+    
+    @media screen and (max-width:560px) {
+        .h-text{
+            .h-h2{
+                font-size: 40px;
+            }
+            .h-p{
+                font-size: 20px;
+            }
+        }
+        .p-p,.s-p{
+            font-size: 40px;
+        }
+        .p-text{
+            margin-right: auto;
+        }
+        .p-ul{
+            font-size: 13px;
+        }
+        .port-h4{
+            top:20%;
+        }
+    }
